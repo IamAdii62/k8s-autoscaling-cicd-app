@@ -10,29 +10,43 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout code
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
+      # Debug files
       - name: Show files
         run: ls -R
 
+      # Setup Docker Buildx
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
+      # Login Docker Hub
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build frontend
-        run: docker build . -t ${{ secrets.DOCKER_USERNAME }}/myapp:latest
+      # Build frontend image
+      - name: Build frontend image
+        run: |
+          docker build \
+          -t ${{ secrets.DOCKER_USERNAME }}/myapp:latest \
+          .
 
-      - name: Build backend
-        run: docker build ./backend -t ${{ secrets.DOCKER_USERNAME }}/backend:latest
+      # Build backend image
+      - name: Build backend image
+        run: |
+          docker build \
+          -t ${{ secrets.DOCKER_USERNAME }}/backend:latest \
+          ./backend
 
-      - name: Push frontend
+      # Push frontend image
+      - name: Push frontend image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/myapp:latest
 
-      - name: Push backend
+      # Push backend image
+      - name: Push backend image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/backend:latest
