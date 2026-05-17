@@ -10,10 +10,10 @@ const connectDB = async () => {
   while (true) {
     try {
       await mongoose.connect("mongodb://mongo-service:27017/testdb");
-      console.log("✅ MongoDB connected");
+      console.log("MongoDB connected");
       break;
     } catch (err) {
-      console.log("❌ MongoDB not ready, retrying in 5 sec...");
+      console.log(" MongoDB not ready, retrying in 5 sec...");
       await new Promise((res) => setTimeout(res, 5000));
     }
   }
@@ -27,6 +27,9 @@ const DataSchema = new mongoose.Schema({
 const Data = mongoose.model("Data", DataSchema);
 
 // API
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
 app.get("/api", async (req, res) => {
   try {
     let data = await Data.findOne();
@@ -46,7 +49,7 @@ const startServer = async () => {
   await connectDB();
 
   app.listen(5000, () => {
-    console.log("🚀 Backend running on port 5000");
+    console.log("Backend running on port 5000");
   });
 };
 
