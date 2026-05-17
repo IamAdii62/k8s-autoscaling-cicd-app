@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: myapp:v1
+        image: aditi62/myapp:latest
         ports:
         - containerPort: 3000
 

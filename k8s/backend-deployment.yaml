@@ -1,19 +1,38 @@
 apiVersion: apps/v1
 kind: Deployment
+
 metadata:
   name: backend-deployment
+
 spec:
   replicas: 2
+
   selector:
     matchLabels:
       app: backend
+
   template:
     metadata:
       labels:
         app: backend
+
     spec:
       containers:
       - name: backend
-        image: backend:v1
+        image: aditi62/backend:latest
+
         ports:
         - containerPort: 5000
+
+        env:
+        - name: MONGO_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: mongo-secret
+              key: MONGO_USERNAME
+
+        - name: MONGO_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mongo-secret
+              key: MONGO_PASSWORD
