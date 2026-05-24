@@ -47,6 +47,7 @@ Created a full-stack application structure:
 - MongoDB Database
 
 ![Project Structure](screenshots/project-structure.png)
+
 ---
 
 # ✅ Step 2 — Docker Containerization
@@ -56,7 +57,6 @@ Dockerized all services:
 - Frontend container
 - Backend container
 - MongoDB integration
-
 
 ![Docker Images](screenshots/docker-images.png)
 
@@ -82,6 +82,7 @@ Deployed the application on Kubernetes using:
 ---
 
 # ✅ Step 4 — Kubernetes Services
+
 Verified Kubernetes services:
 
 - backend-service
@@ -97,6 +98,7 @@ Verified Kubernetes services:
 Configured autoscaling using CPU utilization.
 
 ![HPA Autoscaling](screenshots/hpa-autoscaling.png)
+
 ---
 
 # ✅ Step 6 — AWS EKS Cluster Setup
@@ -110,14 +112,15 @@ Created AWS EKS cluster with:
 ![EKS Cluster Setup](screenshots/eks-cluster-setup.png)
 
 ![EKS Networking](screenshots/eks-networking.png)
----
 
+---
 
 # ✅ Step 7 — Node Group & EC2 Worker Nodes
 
-Configured worker nodes for Kubernetes workload
+Configured worker nodes for Kubernetes workloads.
 
 ![Node Group & Worker Nodes](screenshots/nodegroup-worker-nodes.png)
+
 ---
 
 # ✅ Step 8 — LoadBalancer Service
@@ -125,6 +128,7 @@ Configured worker nodes for Kubernetes workload
 Exposed the application publicly using AWS LoadBalancer.
 
 ![LoadBalancer Service](screenshots/loadbalancer-service.png)
+
 ---
 
 # ✅ Step 9 — Application Output
@@ -134,7 +138,9 @@ Successfully connected:
 - Frontend
 - Backend
 - MongoDB
+
 ![Application Output](screenshots/app-output.png)
+
 ---
 
 # ✅ Step 10 — Monitoring Setup
@@ -144,22 +150,21 @@ Installed monitoring stack using Helm:
 - Grafana
 - Alertmanager
 - Node Exporter
+
 ![Monitoring Pods](screenshots/monitoring-pods1.png)
 
 ![Monitoring Pods](screenshots/monitoring-pods.png)
+
 ---
 
 # ✅ Step 11 — Grafana Dashboard
 
 Configured Grafana dashboard for Kubernetes monitoring.
+
 ![Grafana Dashboard](screenshots/grafana-dashboard.png)
 
 ![Grafana Dashboard](screenshots/grafana-dashboard-1.png)
----
 
-# ✅ Step 12 — GitHub Integration
-
-Pushed the complete project to GitHub repository.
 ---
 
 # 🧠 Issues Solved During Project
@@ -182,26 +187,24 @@ Pushed the complete project to GitHub repository.
 ```bash
 kubectl get pods
 ```
+
 ## Kubernetes Services
 
 ```bash
 kubectl get svc
 ```
----
 
 ## Horizontal Pod Autoscaler (HPA)
 
 ```bash
 kubectl get hpa
 ```
----
 
 ## Monitoring Namespace Pods
 
 ```bash
 kubectl get pods -n monitoring
 ```
----
 
 ## Grafana Port Forward
 
@@ -209,34 +212,30 @@ kubectl get pods -n monitoring
 kubectl port-forward svc/monitoring-grafana -n monitoring 3000:80
 ```
 
----
-
 ## Check Current Kubernetes Context
 
 ```bash
 kubectl config current-context
 ```
----
 
 ## Switch Kubernetes Context
 
 ```bash
 kubectl config use-context minikube
 ```
----
 
 ## AWS EKS Cluster List
 
 ```bash
 aws eks list-clusters --region ap-south-1
 ```
----
 
 ## AWS EKS Nodegroup List
 
 ```bash
 aws eks list-nodegroups --cluster-name aditi-cluster --region ap-south-1
 ```
+
 ---
 
 # 📌 Final Output
