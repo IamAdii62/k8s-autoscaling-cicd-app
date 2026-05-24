@@ -87,6 +87,20 @@ Deployed the application on Kubernetes using:
 
 ![Kubernetes Pods](screenshots/k8s-pods-5.png)
 
+---
+
+# ✅ Step 4 — Kubernetes Services
+
+Verified Kubernetes services:
+
+- backend-service
+- mongo-service
+- myapp-service
+
+### 📸 Screenshot
+
+![Kubernetes Services](screenshots/k8s-services.png)
+
 # 📌 Final Output
 
 ✔️ Full-stack application deployed successfully on Kubernetes  
