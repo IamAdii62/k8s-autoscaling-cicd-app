@@ -46,8 +46,6 @@ Created a full-stack application structure:
 - Backend API
 - MongoDB Database
 
-### 📸 Screenshot
-
 ![Project Structure](screenshots/project-structure.png)
 ---
 
@@ -81,23 +79,14 @@ Deployed the application on Kubernetes using:
 
 ![Kubernetes Pods](screenshots/k8s-pods-1.png)
 
-![Kubernetes Pods](screenshots/k8s-pods-2.png)
-
-![Kubernetes Pods](screenshots/k8s-pods-4.png)
-
-![Kubernetes Pods](screenshots/k8s-pods-5.png)
-
 ---
 
 # ✅ Step 4 — Kubernetes Services
-
 Verified Kubernetes services:
 
 - backend-service
 - mongo-service
 - myapp-service
-
-### 📸 Screenshot
 
 ![Kubernetes Services](screenshots/k8s-services.png)
 
@@ -106,6 +95,8 @@ Verified Kubernetes services:
 # ✅ Step 5 — Horizontal Pod Autoscaler (HPA)
 
 Configured autoscaling using CPU utilization.
+
+![HPA Autoscaling](screenshots/hpa-autoscaling.png)
 ---
 
 # ✅ Step 6 — AWS EKS Cluster Setup
@@ -115,17 +106,25 @@ Created AWS EKS cluster with:
 - Managed Node Group
 - EC2 Worker Nodes
 - Networking configuration
+
+![EKS Cluster Setup](screenshots/eks-cluster-setup.png)
+
+![EKS Networking](screenshots/eks-networking.png)
 ---
+
 
 # ✅ Step 7 — Node Group & EC2 Worker Nodes
 
 Configured worker nodes for Kubernetes workload
+
+![Node Group & Worker Nodes](screenshots/nodegroup-worker-nodes.png)
 ---
 
 # ✅ Step 8 — LoadBalancer Service
 
 Exposed the application publicly using AWS LoadBalancer.
 
+![LoadBalancer Service](screenshots/loadbalancer-service.png)
 ---
 
 # ✅ Step 9 — Application Output
