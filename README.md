@@ -49,7 +49,6 @@ Created a full-stack application structure:
 ### 📸 Screenshot
 
 ![Project Structure](screenshots/project-structure.png)
-```
 ---
 
 # ✅ Step 2 — Docker Containerization
