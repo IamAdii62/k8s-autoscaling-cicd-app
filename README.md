@@ -48,7 +48,6 @@ Created a full-stack application structure:
 
 ### 📸 Screenshot
 
-```md
 ![Project Structure](screenshots/project-structure.png)
 ```
 
