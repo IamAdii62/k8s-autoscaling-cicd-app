@@ -101,6 +101,156 @@ Verified Kubernetes services:
 
 ![Kubernetes Services](screenshots/k8s-services.png)
 
+---
+
+# ✅ Step 4 — Kubernetes Services
+
+Verified Kubernetes services:
+
+- backend-service
+- mongo-service
+- myapp-service
+
+### 📸 Screenshot
+
+```md
+![Kubernetes Services](screenshots/k8s-services.png)
+```
+
+---
+
+# ✅ Step 5 — Horizontal Pod Autoscaler (HPA)
+
+Configured autoscaling using CPU utilization.
+---
+
+# ✅ Step 6 — AWS EKS Cluster Setup
+
+Created AWS EKS cluster with:
+
+- Managed Node Group
+- EC2 Worker Nodes
+- Networking configuration
+---
+
+# ✅ Step 7 — Node Group & EC2 Worker Nodes
+
+Configured worker nodes for Kubernetes workload
+---
+
+# ✅ Step 8 — LoadBalancer Service
+
+Exposed the application publicly using AWS LoadBalancer.
+
+---
+
+# ✅ Step 9 — Application Output
+
+Successfully connected:
+
+- Frontend
+- Backend
+- MongoDB
+---
+
+# ✅ Step 10 — Monitoring Setup
+
+Installed monitoring stack using Helm:
+
+- Grafana
+- Alertmanager
+- Node Exporter
+
+---
+
+# ✅ Step 11 — Grafana Dashboard
+
+Configured Grafana dashboard for Kubernetes monitoring.
+
+---
+
+# ✅ Step 12 — GitHub Integration
+
+Pushed the complete project to GitHub repository.
+---
+
+# 🧠 Issues Solved During Project
+
+- LoadBalancer DNS issue
+- Grafana login failure
+- Monitoring pod restart issue
+- Port-forward connection refused
+- GitHub push failed because of large files
+- Kubernetes context mismatch
+- EKS cluster deletion dependency issue
+- AWS resource cleanup verification
+
+---
+
+# ⚙️ Useful Commands
+
+## Kubernetes Pods
+
+```bash
+kubectl get pods
+```
+## Kubernetes Services
+
+```bash
+kubectl get svc
+```
+---
+
+## Horizontal Pod Autoscaler (HPA)
+
+```bash
+kubectl get hpa
+```
+---
+
+## Monitoring Namespace Pods
+
+```bash
+kubectl get pods -n monitoring
+```
+---
+
+## Grafana Port Forward
+
+```bash
+kubectl port-forward svc/monitoring-grafana -n monitoring 3000:80
+```
+
+---
+
+## Check Current Kubernetes Context
+
+```bash
+kubectl config current-context
+```
+---
+
+## Switch Kubernetes Context
+
+```bash
+kubectl config use-context minikube
+```
+---
+
+## AWS EKS Cluster List
+
+```bash
+aws eks list-clusters --region ap-south-1
+```
+---
+
+## AWS EKS Nodegroup List
+
+```bash
+aws eks list-nodegroups --cluster-name aditi-cluster --region ap-south-1
+```
+---
+
 # 📌 Final Output
 
 ✔️ Full-stack application deployed successfully on Kubernetes  
