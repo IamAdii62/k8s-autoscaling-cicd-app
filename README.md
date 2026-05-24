@@ -103,16 +103,6 @@ Verified Kubernetes services:
 
 ---
 
-# ✅ Step 4 — Kubernetes Services
-
-Verified Kubernetes services:
-
-- backend-service
-- mongo-service
-- myapp-service
-
----
-
 # ✅ Step 5 — Horizontal Pod Autoscaler (HPA)
 
 Configured autoscaling using CPU utilization.
@@ -155,6 +145,8 @@ Installed monitoring stack using Helm:
 - Grafana
 - Alertmanager
 - Node Exporter
+![Monitoring Pods](screenshots/monitoring-pods1.png)
+
 ![Monitoring Pods](screenshots/monitoring-pods.png)
 ---
 
