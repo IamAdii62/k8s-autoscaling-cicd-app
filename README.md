@@ -111,12 +111,6 @@ Verified Kubernetes services:
 - mongo-service
 - myapp-service
 
-### 📸 Screenshot
-
-```md
-![Kubernetes Services](screenshots/k8s-services.png)
-```
-
 ---
 
 # ✅ Step 5 — Horizontal Pod Autoscaler (HPA)
@@ -151,6 +145,7 @@ Successfully connected:
 - Frontend
 - Backend
 - MongoDB
+![Application Output](screenshots/app-output.png)
 ---
 
 # ✅ Step 10 — Monitoring Setup
@@ -160,13 +155,15 @@ Installed monitoring stack using Helm:
 - Grafana
 - Alertmanager
 - Node Exporter
-
+![Monitoring Pods](screenshots/monitoring-pods.png)
 ---
 
 # ✅ Step 11 — Grafana Dashboard
 
 Configured Grafana dashboard for Kubernetes monitoring.
+![Grafana Dashboard](screenshots/grafana-dashboard.png)
 
+![Grafana Dashboard](screenshots/grafana-dashboard-1.png)
 ---
 
 # ✅ Step 12 — GitHub Integration
