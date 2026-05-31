@@ -154,11 +154,14 @@ Installed via Helm:
 Access Prometheus Graph:
 - URL: http://<your-server-ip>:9090/graph
 
+![Prometheus Dashboard](screenshots/prometheus-dashboard.png)
 
 ## Prometheus Targets
 
 - Endpoint health monitoring:
   http://<server-ip>:9090/targets
+
+![Prometheus Targets](screenshots/prometheus-targets.png)
 
 ## Monitoring - Kubernetes Pods
 
@@ -193,24 +196,24 @@ kubectl port-forward svc/monitoring-grafana -n monitoring 3000:80
 
 ### 🚨 Issues Fixed During Project
 
-Docker driver issue in Minikube (Windows fix)
-Kubernetes API version mismatch
-NodePort access issues
-Prometheus 404 path confusion
-Ingress tunnel handling
-Service discovery issues
-HPA CPU scaling verification
-Backend connection debugging
+- Docker driver issue in Minikube (Windows fix)
+- Kubernetes API version mismatch
+- NodePort access issues
+- Prometheus 404 path confusion
+- Ingress tunnel handling
+- Service discovery issues
+- HPA CPU scaling verification
+- Backend connection debugging
 
 ---
 ## 🎯 Final Result
 
-✔ Full-stack app deployed on Kubernetes
-✔ Backend–Frontend–MongoDB connected
-✔ HPA autoscaling working
-✔ Monitoring stack (Prometheus + Grafana) running
-✔ CI/CD pipeline integrated via GitHub
-✔ Production-level troubleshooting completed
+- ✔ Full-stack app deployed on Kubernetes
+- ✔ Backend–Frontend–MongoDB connected
+- ✔ HPA autoscaling working
+- ✔ Monitoring stack (Prometheus + Grafana) running
+- ✔ CI/CD pipeline integrated via GitHub
+- ✔ Production-level troubleshooting completed
 
 ### 👩‍💻 Author
 
